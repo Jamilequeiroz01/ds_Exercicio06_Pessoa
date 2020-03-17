@@ -1,0 +1,12 @@
+public class Pessoa1 {                  
+		
+	String Nome; //Atributos da classe
+	String Sobrenome;
+	int AnoDeNascimento;
+	int Idade;
+	int AnoAtual;
+		
+		void Calculando(){ 
+			Idade = AnoAtual - AnoDeNascimento; //calculo
+		}
+	}

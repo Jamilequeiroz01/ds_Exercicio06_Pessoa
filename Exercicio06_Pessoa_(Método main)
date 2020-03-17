@@ -1,0 +1,32 @@
+import java.util.*;
+public class Pessoa1Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+	
+                int  Idade, AnoAtual, AnoDeNascimento; String Nome;  // As variaveis
+                String Sobrenome; 
+		
+		Pessoa1 pessoa1 = new Pessoa1(); //instanciando
+		
+		System.out.println("Digite o seu Nome"); //Pedindo nome para usuario
+		pessoa1.Nome = in.next();
+		
+		System.out.println("Digite o seu Sobrenome"); //Pedindo sobrenome para o usuario
+		pessoa1.Sobrenome = in.next();
+		
+		System.out.println("Digite o seu ano de nascimento");  //Pedindo ano de nascimento para usuario
+		pessoa1.AnoDeNascimento = in.nextInt();
+		
+		System.out.println("Digite o ano atual"); //Pedindo ano atual para usuario
+		pessoa1.AnoAtual = in.nextInt();
+		
+		pessoa1.Calculando(); 
+		
+		System.out.println("Seu nome é: " + pessoa1.Nome  +  pessoa1.Sobrenome);  //Apresentando nome e sobrenome
+
+		System.out.println("Você tem:  " + pessoa1.Idade + " anos "); //Apresentando idade
+	
+           }
+       }
